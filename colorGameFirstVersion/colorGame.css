@@ -1,0 +1,78 @@
+body {
+    background-color: #232323;
+    margin: 0;
+    font-family: "Open Sans", "Avenir";
+}
+
+.square {
+    width: 30%;
+    background: purple;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+    border-radius: 15%;
+    transition: background 0.6s; /* pierwszy parametr to co chcmy zeby wygaszalo a drug ile to czasu ma zajac w sekundach*/
+    -webkit-transition: transition: background 0.6s;
+    -moz-transition: transition: background 0.6s;
+}
+
+#container {
+    margin: 20px auto; /* 20 px top botton and auto means it will center */
+    max-width: 600px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+    background-color: steelblue;
+    margin: 0;
+    line-height: 1.1;
+    padding: 20px 0;
+}
+
+span {
+    /*color: white;*/
+}
+
+#stripe {
+    background-color: white;
+    height: 30px;
+    text-align: center;
+
+}
+
+.selected {
+    color: white;
+    background: steelblue;
+}
+
+#colorDisplay {
+    font-size: 200%;
+}
+
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    font-size: inherit;
+    transition: all 0.3s; /* how we want to animate transitions between color changes, "all" is what we want to change, and the second is how much time in seconds (0.3s or 2.0s)*/
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    outline: none; /*browser is doing blue outline i za pomoca tego wylaczylismy */
+}
+
+#message {
+    display: inline-block; /* with inline-block we need to add width */
+    width: 20%; /* so this span element which is inline-block takes up 20% of the page */
+}
+
+button:hover {
+    color: white;
+    background: steelblue;
+}
